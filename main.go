@@ -65,12 +65,14 @@ func main() {
 	fmt.Print("Type a number: ")
 	fmt.Scanln(&inputed)
 	fmt.Println("Your number is:", inputed)
+	fmt.Println("========================")
 
 	var inputedNome string
 	fmt.Print("Digite o nome: ")
 	fmt.Scanln(&inputedNome)
 	fmt.Println("Olá ", inputedNome)
 
+	fmt.Println("========================")
 	var inputedHora int
 	fmt.Println("Digite a hora: ")
 	fmt.Scanln(&inputedHora)
@@ -84,6 +86,7 @@ func main() {
 		fmt.Println("Boa noite!")
 	}
 
+	fmt.Println("========================")
 	day := 5
 	switch day {
 	case 1:
@@ -95,14 +98,20 @@ func main() {
 	default:
 		fmt.Println("Dia inválido")
 	}
-
+	fmt.Println("========================")
 	var inputedSenha string
 	fmt.Println("Digite a senha: ")
 	fmt.Scanln(&inputedSenha)
 
+	for inputedSenha != "123" {
+		fmt.Println("Senha incorreta")
+		fmt.Println("Digite a senha: ")
+		fmt.Scanln(&inputedSenha)
+	}
 	if inputedSenha == "123" {
 		fmt.Println("Acesso permitido")
 	} else {
 		fmt.Println("Acesso negado")
 	}
+	fmt.Println("========================")
 }
