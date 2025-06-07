@@ -83,4 +83,26 @@ func main() {
 	} else {
 		fmt.Println("Boa noite!")
 	}
+
+	day := 5
+	switch day {
+	case 1:
+		fmt.Println("Inicio de Semana")
+	case 2, 3, 4, 5:
+		fmt.Println("Dia Util")
+	case 7:
+		fmt.Println("Final de Semana")
+	default:
+		fmt.Println("Dia inválido")
+	}
+
+	var inputedSenha string
+	fmt.Println("Digite a senha: ")
+	fmt.Scanln(&inputedSenha)
+
+	if inputedSenha == "123" {
+		fmt.Println("Acesso permitido")
+	} else {
+		fmt.Println("Acesso negado")
+	}
 }
